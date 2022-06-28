@@ -35,7 +35,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.0",
         "ext-SPL": "*",
         "ext-date": "*",
         "ext-hash": "*",
@@ -45,7 +45,6 @@
         "ext-pcre": "*"
     },
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "0.6.0",
         "friendsofphp/php-cs-fixer": "^2.16",
         "phpcompatibility/php-compatibility": "*",
         "phpunit/phpunit": "^9 || ^8 || ^7",
