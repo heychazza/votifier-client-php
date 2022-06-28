@@ -180,8 +180,10 @@ class Votifier extends GenericServer
             $vote->getAddress() . "\n" .
             $vote->getTimestamp() . "\n";
 
+        $encryptedVotePackage = '';
+
         // Encrypt the string
-        openssl_public_encrypt($votePackage, $encryptedVotePackage, $this->getPublicKey(), OPENSSL_SSLV23_PADDING);
+        openssl_public_encrypt($votePackage, $encryptedVotePackage, $this->getPublicKey(), 2);
 
         return $encryptedVotePackage;
     }
