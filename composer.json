@@ -1,5 +1,5 @@
 {
-    "name": "heychazza/votifier-client",
+    "name": "track/votifier-client",
     "description": "Simple Tool to send vote request to a server which has the Votifier plugin.",
     "type": "library",
     "keywords": [
