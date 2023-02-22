@@ -1,5 +1,5 @@
 {
-    "name": "d3strukt0r/votifier-client",
+    "name": "heychazza/votifier-client",
     "description": "Simple Tool to send vote request to a server which has the Votifier plugin.",
     "type": "library",
     "keywords": [
