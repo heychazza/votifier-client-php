@@ -112,13 +112,7 @@ abstract class GenericServer implements ServerInterface
      */
     public function setPublicKey(string $publicKey): self
     {
-        $publicKey = wordwrap($publicKey, 65, "\n", true);
-        $publicKey = <<<EOF
------BEGIN PUBLIC KEY-----
-{$publicKey}
------END PUBLIC KEY-----
-EOF;
-        $this->publicKey = $publicKey;
+        $this->publicKey = "-----BEGIN PUBLIC KEY-----\n{$publicKey}\n-----END PUBLIC KEY-----\n";
 
         return $this;
     }
