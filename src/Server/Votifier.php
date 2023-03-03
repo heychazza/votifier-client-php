@@ -182,6 +182,8 @@ class Votifier extends GenericServer
 
         $publicKeyResource = openssl_pkey_get_public($this->getPublicKey());
 
+        $encryptedVotePackage = '';
+
         // Encrypt the string
         openssl_public_encrypt($votePackage, $encryptedVotePackage, $publicKeyResource);
 
